@@ -8,6 +8,7 @@ import { hasEnvVars } from "@/utils/supabase/check-env-vars";
 import Image from "next/image";
 import { SiSolana } from "react-icons/si";
 import { Box } from "@/components/box/box";
+import Link from "next/link";
 
 
 export default async function Index() {
@@ -71,13 +72,18 @@ export default async function Index() {
                 alt="Illustration d'un logo de chaussure"
               />
             </div>
-            <div className="flex flex-col text-center gap-1">
+            <div className="flex flex-col text-center gap-3">
               <Typography variant="lead" component="h3">
                 Boutique
               </Typography>
               <Typography variant="body-base" component="p" theme="gray">
                 C'est une boutique 100% fiable !
               </Typography>
+              <Button>
+                <Link href="/sign-in">
+                En savoir +
+                </Link>
+              </Button>
             </div>
       </Box>
       </div>
