@@ -69,12 +69,33 @@ export default function RootLayout({
                         </Typography>
                         </DropdownMenuTrigger>
                         <DropdownMenuContent>
-                          <DropdownMenuLabel>My Account</DropdownMenuLabel>
+                          <DropdownMenuLabel>Réseaux</DropdownMenuLabel>
                           <DropdownMenuSeparator />
-                          <DropdownMenuItem>Profile</DropdownMenuItem>
-                          <DropdownMenuItem>Billing</DropdownMenuItem>
-                          <DropdownMenuItem>Team</DropdownMenuItem>
-                          <DropdownMenuItem>Subscription</DropdownMenuItem>
+
+                          <Link href="/sign-in">
+                          <DropdownMenuItem>
+                            Snapchat
+                          </DropdownMenuItem>
+                          </Link>
+
+                          <Link href="/sign-in">
+                          <DropdownMenuItem>
+                            Snapchat
+                          </DropdownMenuItem>
+                          </Link>
+
+                          <Link href="/sign-in">
+                          <DropdownMenuItem>
+                            Snapchat
+                          </DropdownMenuItem>
+                          </Link>
+
+                          <Link href="/sign-in">
+                          <DropdownMenuItem>
+                            Snapchat
+                          </DropdownMenuItem>
+                          </Link>
+                          
                         </DropdownMenuContent>
                       </DropdownMenu>
 
