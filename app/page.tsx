@@ -1,45 +1,112 @@
 import { Container } from "@/components/container/container";
-import { Logo } from "@/components/design-system/logo/logo";
-import { ScreenSpinner } from "@/components/design-system/spinner/screen-spinner";
 import { Spinner } from "@/components/design-system/spinner/spinner";
 import { Typography } from "@/components/design-system/typography/typography";
-import Hero from "@/components/hero";
 import ConnectSupabaseSteps from "@/components/tutorial/connect-supabase-steps";
 import SignUpUserSteps from "@/components/tutorial/sign-up-user-steps";
 import { Button } from "@/components/ui/button";
 import { hasEnvVars } from "@/utils/supabase/check-env-vars";
 import Image from "next/image";
 import { SiSolana } from "react-icons/si";
-import "./globals.css";
+import { Box } from "@/components/box/box";
 
 
 export default async function Index() {
   return (
     <>
-      <Typography variant="lead" component="div" theme="warning">
-        Hello Singapour ! 
-        Je vais te rejoindre coute que coute je suis super motiver.
-      </Typography>
-      <div className="flex items-center py-10">
-        <Button size="icon">
-        <SiSolana />
-        </Button>
-        <Spinner variant="gray"/>
-        <Logo />
-        <Image 
-            src="/assets/svg/nike.svg"
-            width={129}
-            height={116}
-            alt="Meilleure boutique de chaussures"
-          />
+      <Box>
+        <Container className="py-24 space-y-10">
 
-      <Container>
-        <Typography variant="h1" component="h1" theme="danger">
-          Bonjour à tous
-          </Typography>
+          <div className="flex justify-center gap-24">
+
+            <div className="w-[520px] h-[350px] relative">
+              <Image
+                fill
+                src="/assets/svg/logo-rnk.svg"
+                alt="Illustration du logo de la boutique"
+              />
+            </div>
+
+            <div className="max-w-md space-y-7">
+              <Typography variant="h3" component="h2">
+                Les toutes nouvelles paires déjà sorties !
+              </Typography>
+
+              <div className="space-y-3">
+                <p>Prix raisonnable.</p>
+                <p>Plusieurs choix.</p>
+                <p>Trouve ton style.</p>
+              </div>
+
+              <div className="relative inline-block">
+
+                <Button variant="secondary">
+                  Let's Go
+                </Button>
+
+                <Image
+                  width={38}
+                  height={25}
+                  src="/assets/svg/cursor.svg"
+                  alt="Un curseur"
+                  className="absolute left-7 -bottom-5"
+                />
+
+              </div>
+
+            </div>
+
+          </div>
+
         </Container>
+      </Box>
 
-        </div>
+    <div className="flex item-center">
+
+      <div className="px-3">
+      <Box padding_y="py-72">
+      <div className="h-[150px] relative">
+              <Image
+                fill
+                src="/assets/svg/sneaker.svg"
+                alt="Illustration d'un logo de chaussure"
+              />
+            </div>
+            <div className="flex flex-col text-center gap-1">
+              <Typography variant="lead" component="h3">
+                Boutique
+              </Typography>
+              <Typography variant="body-base" component="p" theme="gray">
+                C'est une boutique 100% fiable !
+              </Typography>
+            </div>
+      </Box>
+      </div>
+
+
+      <div className="px-3">
+      <Box padding_y="py-72">
+      <div className="h-[150px] relative">
+              <Image
+                fill
+                src="/assets/svg/sneaker.svg"
+                alt="Illustration d'un logo de chaussure"
+              />
+            </div>
+            <div className="flex flex-col text-center gap-1">
+              <Typography variant="lead" component="h3">
+                Boutique
+              </Typography>
+              <Typography variant="body-base" component="p" theme="gray">
+                C'est une boutique 100% fiable !
+              </Typography>
+            </div>
+      </Box>
+      </div>
+
+
+    </div>
+
+
     </>
   );
 }

@@ -45,7 +45,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <main className="min-h-screen flex flex-col items-center">
-            <div className="flex-1 w-full flex flex-col gap-60 items-center">
+            <div className="flex-1 w-full flex flex-col gap-36 items-center">
               <nav className="w-full flex justify-center border-b border-b-foreground/10 h-16">
                 <div className="w-full max-w-7xl flex justify-between items-center p-3 px-36 text-sm">
 
@@ -80,19 +80,13 @@ export default function RootLayout({
 
                           <Link href="/sign-in">
                           <DropdownMenuItem>
-                            Snapchat
+                            Instagram
                           </DropdownMenuItem>
                           </Link>
 
                           <Link href="/sign-in">
                           <DropdownMenuItem>
-                            Snapchat
-                          </DropdownMenuItem>
-                          </Link>
-
-                          <Link href="/sign-in">
-                          <DropdownMenuItem>
-                            Snapchat
+                            X
                           </DropdownMenuItem>
                           </Link>
                           
@@ -102,6 +96,7 @@ export default function RootLayout({
                       <Typography variant="caption2" component="div" theme="black">
                         Panier
                       </Typography>
+                      
                       <Typography variant="caption2" component="div" theme="black">
                         Boutique
                       </Typography>
