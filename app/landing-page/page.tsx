@@ -4,7 +4,6 @@ import { ScreenSpinner } from "@/components/design-system/spinner/screen-spinner
 import { Spinner } from "@/components/design-system/spinner/spinner";
 import { Typography } from "@/components/design-system/typography/typography";
 import Hero from "@/components/hero";
-import { ActiveLink } from "@/components/navigation/active-link";
 import ConnectSupabaseSteps from "@/components/tutorial/connect-supabase-steps";
 import SignUpUserSteps from "@/components/tutorial/sign-up-user-steps";
 import { Button } from "@/components/ui/button";
