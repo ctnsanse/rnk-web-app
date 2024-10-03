@@ -77,7 +77,7 @@ export default async function Index() {
                 Boutique
               </Typography>
               <Typography variant="body-base" component="p" theme="gray">
-                C'est une boutique 100% fiable !
+                C'est une boutique 100% fiable ! Avec un très bon service client.
               </Typography>
               <Button>
                 <Link href="/sign-in">
@@ -98,13 +98,94 @@ export default async function Index() {
                 alt="Illustration d'un logo de chaussure"
               />
             </div>
-            <div className="flex flex-col text-center gap-1">
+            <div className="flex flex-col text-center gap-3">
               <Typography variant="lead" component="h3">
-                Boutique
+                Sponsor
+              </Typography>
+              <Typography variant="body-base" component="p" theme="gray" className="">
+                Les produits sont des produits de chez notre sponsor nike.
+              </Typography>
+              <Button>
+                <Link href="/sign-in">
+                En savoir +
+                </Link>
+              </Button>
+            </div>
+
+      </Box>
+      </div>
+
+      <div className="px-3">
+      <Box padding_y="py-72">
+      <div className="h-[150px] relative">
+              <Image
+                fill
+                src="/assets/svg/sneaker.svg"
+                alt="Illustration d'un logo de chaussure"
+              />
+            </div>
+            <div className="flex flex-col text-center gap-3">
+              <Typography variant="lead" component="h3">
+                Bon prix !
               </Typography>
               <Typography variant="body-base" component="p" theme="gray">
-                C'est une boutique 100% fiable !
+                Les prix sont raisonnable et c'est très rentable d'acheter chez nous.
               </Typography>
+              <Button>
+                <Link href="/sign-in">
+                En savoir +
+                </Link>
+              </Button>
+            </div>
+      </Box>
+      </div>
+
+      <div className="px-3">
+      <Box padding_y="py-72">
+      <div className="h-[150px] relative">
+              <Image
+                fill
+                src="/assets/svg/sneaker.svg"
+                alt="Illustration d'un logo de chaussure"
+              />
+            </div>
+            <div className="flex flex-col text-center gap-3">
+              <Typography variant="lead" component="h3">
+                Livraison
+              </Typography>
+              <Typography variant="body-base" component="p" theme="gray">
+                Le service livraison est  de très bonne qualité et très rapide
+              </Typography>
+              <Button>
+                <Link href="/sign-in">
+                En savoir +
+                </Link>
+              </Button>
+            </div>
+      </Box>
+      </div>
+
+      <div className="px-3">
+      <Box padding_y="py-16">
+      <div className="h-[150px] relative">
+              <Image
+                fill
+                src="/assets/svg/sneaker.svg"
+                alt="Illustration d'un logo de chaussure"
+              />
+            </div>
+            <div className="flex flex-col text-center gap-3">
+              <Typography variant="lead" component="h3">
+                Protection
+              </Typography>
+              <Typography variant="body-base" component="p" theme="gray">
+              Vos payement et bos informations sont sécurisés chez nous.
+              </Typography>
+              <Button>
+                <Link href="/sign-in">
+                En savoir +
+                </Link>
+              </Button>
             </div>
       </Box>
       </div>
