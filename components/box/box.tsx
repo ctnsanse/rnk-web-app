@@ -10,7 +10,7 @@ interface Props {
 export const Box = ({children, className, padding_x = "px-9", padding_y = "py-9"}: Props) => {
     return (
         <div className={clsx(
-            "w-full border border-gray-500 bg-white rounded shadow-2xl",
+            "w-full border border-gray-500 bg-white rounded",
             padding_x,
             padding_y,
             className

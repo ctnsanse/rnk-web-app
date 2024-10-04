@@ -11,6 +11,7 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/breadcrumbs/breadcrumb"
+import { Box } from "@/components/box/box";
 
 export default async function MonEspace() {
 
@@ -36,6 +37,12 @@ export default async function MonEspace() {
           </BreadcrumbItem>
         </BreadcrumbList>
       </Breadcrumb>
+    </div>
+
+    <div className="flex items">
+    <Box>
+
+    </Box>
     </div>
 
       <h1>Mon Espace</h1>

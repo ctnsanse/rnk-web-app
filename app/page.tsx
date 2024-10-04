@@ -14,7 +14,7 @@ import Link from "next/link";
 export default async function Index() {
   return (
     <>
-      <Box>
+      <Box className="shadow-2xl">
         <Container className="py-24 space-y-10">
 
           <div className="flex justify-center gap-24">
@@ -64,7 +64,7 @@ export default async function Index() {
       <div className="flex item-center">
 
         <div className="px-3">
-          <Box padding_y="py-16">
+          <Box className="shadow-2xl" padding_y="py-16">
             <div className="h-[150px] relative">
               <Image
                 fill
@@ -90,7 +90,7 @@ export default async function Index() {
 
 
         <div className="px-3">
-          <Box padding_y="py-16">
+          <Box className="shadow-2xl" padding_y="py-16">
             <div className="h-[150px] relative">
               <Image
                 fill
@@ -116,7 +116,7 @@ export default async function Index() {
         </div>
 
         <div className="px-3">
-          <Box padding_y="py-16">
+          <Box className="shadow-2xl" padding_y="py-16">
             <div className="h-[150px] relative">
               <Image
                 fill
@@ -141,7 +141,7 @@ export default async function Index() {
         </div>
 
         <div className="px-3">
-          <Box padding_y="py-16">
+          <Box className="shadow-2xl" padding_y="py-16">
             <div className="h-[150px] relative">
               <Image
                 fill
@@ -166,7 +166,7 @@ export default async function Index() {
         </div>
 
         <div className="px-3">
-          <Box padding_y="py-16">
+          <Box className="shadow-2xl" padding_y="py-16">
             <div className="h-[150px] relative">
               <Image
                 fill
@@ -192,8 +192,7 @@ export default async function Index() {
       </div>
 
 
-      <Box>
-
+      <Box className="shadow-2xl">
       </Box>
 
 
