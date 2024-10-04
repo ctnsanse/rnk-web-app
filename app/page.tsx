@@ -61,11 +61,11 @@ export default async function Index() {
         </Container>
       </Box>
 
-    <div className="flex item-center">
+      <div className="flex item-center">
 
-      <div className="px-3">
-      <Box padding_y="py-72">
-      <div className="h-[150px] relative">
+        <div className="px-3">
+          <Box padding_y="py-16">
+            <div className="h-[150px] relative">
               <Image
                 fill
                 src="/assets/svg/sneaker.svg"
@@ -81,20 +81,20 @@ export default async function Index() {
               </Typography>
               <Button>
                 <Link href="/sign-in">
-                En savoir +
+                  En savoir +
                 </Link>
               </Button>
             </div>
-      </Box>
-      </div>
+          </Box>
+        </div>
 
 
-      <div className="px-3">
-      <Box padding_y="py-72">
-      <div className="h-[150px] relative">
+        <div className="px-3">
+          <Box padding_y="py-16">
+            <div className="h-[150px] relative">
               <Image
                 fill
-                src="/assets/svg/sneaker.svg"
+                src="/assets/svg/sponsor-nike.svg"
                 alt="Illustration d'un logo de chaussure"
               />
             </div>
@@ -107,20 +107,20 @@ export default async function Index() {
               </Typography>
               <Button>
                 <Link href="/sign-in">
-                En savoir +
+                  En savoir +
                 </Link>
               </Button>
             </div>
 
-      </Box>
-      </div>
+          </Box>
+        </div>
 
-      <div className="px-3">
-      <Box padding_y="py-72">
-      <div className="h-[150px] relative">
+        <div className="px-3">
+          <Box padding_y="py-16">
+            <div className="h-[150px] relative">
               <Image
                 fill
-                src="/assets/svg/sneaker.svg"
+                src="/assets/svg/cash.svg"
                 alt="Illustration d'un logo de chaussure"
               />
             </div>
@@ -133,19 +133,19 @@ export default async function Index() {
               </Typography>
               <Button>
                 <Link href="/sign-in">
-                En savoir +
+                  En savoir +
                 </Link>
               </Button>
             </div>
-      </Box>
-      </div>
+          </Box>
+        </div>
 
-      <div className="px-3">
-      <Box padding_y="py-72">
-      <div className="h-[150px] relative">
+        <div className="px-3">
+          <Box padding_y="py-16">
+            <div className="h-[150px] relative">
               <Image
                 fill
-                src="/assets/svg/sneaker.svg"
+                src="/assets/svg/delivery.svg"
                 alt="Illustration d'un logo de chaussure"
               />
             </div>
@@ -158,19 +158,19 @@ export default async function Index() {
               </Typography>
               <Button>
                 <Link href="/sign-in">
-                En savoir +
+                  En savoir +
                 </Link>
               </Button>
             </div>
-      </Box>
-      </div>
+          </Box>
+        </div>
 
-      <div className="px-3">
-      <Box padding_y="py-16">
-      <div className="h-[150px] relative">
+        <div className="px-3">
+          <Box padding_y="py-16">
+            <div className="h-[150px] relative">
               <Image
                 fill
-                src="/assets/svg/sneaker.svg"
+                src="/assets/svg/padlock.svg"
                 alt="Illustration d'un logo de chaussure"
               />
             </div>
@@ -179,19 +179,22 @@ export default async function Index() {
                 Protection
               </Typography>
               <Typography variant="body-base" component="p" theme="gray">
-              Vos payement et bos informations sont sécurisés chez nous.
+                Vos payement et bos informations sont sécurisés chez nous.
               </Typography>
               <Button>
                 <Link href="/sign-in">
-                En savoir +
+                  En savoir +
                 </Link>
               </Button>
             </div>
-      </Box>
+          </Box>
+        </div>
       </div>
 
 
-    </div>
+      <Box>
+
+      </Box>
 
 
     </>

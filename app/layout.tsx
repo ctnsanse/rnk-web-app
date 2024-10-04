@@ -64,9 +64,9 @@ export default function RootLayout({
 
                       <DropdownMenu>
                         <DropdownMenuTrigger>
-                        <Typography variant="caption2" component="div" theme="black">
+                        <p>
                           Réseaux
-                        </Typography>
+                        </p>
                         </DropdownMenuTrigger>
                         <DropdownMenuContent>
                           <DropdownMenuLabel>Réseaux</DropdownMenuLabel>
@@ -93,13 +93,40 @@ export default function RootLayout({
                         </DropdownMenuContent>
                       </DropdownMenu>
 
-                      <Typography variant="caption2" component="div" theme="black">
+                      <p>
                         Panier
-                      </Typography>
+                      </p>
                       
-                      <Typography variant="caption2" component="div" theme="black">
-                        Boutique
-                      </Typography>
+                      <DropdownMenu>
+                        <DropdownMenuTrigger>
+                        <p>
+                          Boutique
+                        </p>
+                        </DropdownMenuTrigger>
+                        <DropdownMenuContent>
+                          <DropdownMenuLabel>Boutique</DropdownMenuLabel>
+                          <DropdownMenuSeparator />
+
+                          <Link href="/sign-in">
+                          <DropdownMenuItem>
+                            Homme
+                          </DropdownMenuItem>
+                          </Link>
+
+                          <Link href="/sign-in">
+                          <DropdownMenuItem>
+                            Femme
+                          </DropdownMenuItem>
+                          </Link>
+
+                          <Link href="/sign-in">
+                          <DropdownMenuItem>
+                            Enfant
+                          </DropdownMenuItem>
+                          </Link>
+                          
+                        </DropdownMenuContent>
+                      </DropdownMenu>
                     </div>
 
                   </div>
