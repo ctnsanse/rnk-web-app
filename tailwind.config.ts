@@ -28,7 +28,6 @@ const config = {
           400: "#56c4a7",
           DEFAULT: "#2AB691",
           600: "#26a482",
-  
         },
         gray: {
           300: "#fafafa",
@@ -38,13 +37,21 @@ const config = {
           700: "#808080",
           800: "#333333",
           DEFAULT: "#1D1D1D",
-  
-  
         },
         alert: {
           danger: "#FF4E4E",
           success: "#00DD16",
           warning: "#FEB72F",
+        },
+        blue: {
+          100: "#dbeafe",
+          200: "#a5f3fc",
+          300: "#7dd3fc",
+          400: "#38bdf8",
+          500: "#0ea5e9",
+          600: "#0284c7",
+          700: "#0369a1",
+          800: "#075985",
         },
   
       },

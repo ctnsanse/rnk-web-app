@@ -76,7 +76,7 @@ export default async function Index() {
           <Box className="shadow-xl" padding_y="py-16">
             <div className="h-[150px] relative">
               <Image
-                fill
+              fill
                 src="/assets/svg/sneaker.svg"
                 alt="Illustration d'un logo de chaussure"
               />
