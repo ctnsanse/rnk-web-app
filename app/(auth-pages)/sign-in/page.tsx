@@ -1,4 +1,6 @@
 import { signInAction } from "@/app/actions";
+import { Box } from "@/components/box/box";
+import { Container } from "@/components/container/container";
 import { FormMessage, Message } from "@/components/form-message";
 import { SubmitButton } from "@/components/submit-button";
 import { Input } from "@/components/ui/input";
@@ -7,6 +9,10 @@ import Link from "next/link";
 
 export default function Login({ searchParams }: { searchParams: Message }) {
   return (
+
+    <Container className="flex items-center justify-center py-16">
+  <Box className="w-full max-w-md p-8 rounded-lg shadow-md">
+
     <form className="flex-1 flex flex-col min-w-64">
       <h1 className="text-2xl font-medium">Sign in</h1>
       <p className="text-sm text-foreground">
@@ -39,5 +45,8 @@ export default function Login({ searchParams }: { searchParams: Message }) {
         <FormMessage message={searchParams} />
       </div>
     </form>
+    </Box>
+    </Container>
   );
 }
+
