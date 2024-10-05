@@ -11,9 +11,10 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/breadcrumbs/breadcrumb"
+import { Typography } from "@/components/design-system/typography/typography";
 import { Box } from "@/components/box/box";
 
-export default async function MonEspace() {
+export default async function monespace() {
 
   // Fonction Session for only user connected
   const supabase = createClient();
@@ -27,7 +28,7 @@ export default async function MonEspace() {
   }
 
   return (
-    <>
+  <>
 
     <div className="absolute left-10 top-20">
     <Breadcrumb>
@@ -39,13 +40,11 @@ export default async function MonEspace() {
       </Breadcrumb>
     </div>
 
-    <div className="flex items">
-    <Box>
+    <div className="flex py-16 px-14">
+      <Box className="max-w-xs">
 
-    </Box>
+      </Box>
     </div>
-
-      <h1>Mon Espace</h1>
 
     </>
   )
