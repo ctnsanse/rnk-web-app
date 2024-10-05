@@ -14,57 +14,66 @@ import Link from "next/link";
 export default async function Index() {
   return (
     <>
-      <Box className="shadow-2xl">
-        <Container className="py-24 space-y-10">
 
-          <div className="flex justify-center gap-24">
+      <Container className="py-12 space-y-10">
 
-            <div className="w-[520px] h-[350px] relative">
-              <Image
-                fill
-                src="/assets/svg/logo-rnk.svg"
-                alt="Illustration du logo de la boutique"
-              />
-            </div>
+        <Box className="shadow-md">
 
-            <div className="max-w-md space-y-7">
-              <Typography variant="h3" component="h2">
-                Les toutes nouvelles paires déjà sorties !
-              </Typography>
+          <Container className="flex items-center justify-center py-8">
 
-              <div className="space-y-3">
-                <p>Prix raisonnable.</p>
-                <p>Plusieurs choix.</p>
-                <p>Trouve ton style.</p>
-              </div>
+            <div className="flex justify-center gap-24">
 
-              <div className="relative inline-block">
-
-                <Button variant="secondary">
-                  Let's Go
-                </Button>
-
+              <div className="w-[520px] h-[350px] relative">
                 <Image
-                  width={38}
-                  height={25}
-                  src="/assets/svg/cursor.svg"
-                  alt="Un curseur"
-                  className="absolute left-7 -bottom-5"
+                  fill
+                  src="/assets/svg/logo-rnk.svg"
+                  alt="Illustration du logo de la boutique"
                 />
+              </div>
+
+              <div className="max-w-md space-y-7">
+                <Typography variant="h3" component="h2">
+                  Les toutes nouvelles paires déjà sorties !
+                </Typography>
+
+                <div className="space-y-3">
+                  <p>Prix raisonnable.</p>
+                  <p>Plusieurs choix.</p>
+                  <p>Trouve ton style.</p>
+                </div>
+
+                <div className="relative inline-block">
+
+                  <Button variant="secondary">
+                    Let's Go
+                  </Button>
+
+                  <Image
+                    width={38}
+                    height={25}
+                    src="/assets/svg/cursor.svg"
+                    alt="Un curseur"
+                    className="absolute left-7 -bottom-5"
+                  />
+
+                </div>
 
               </div>
 
             </div>
 
-          </div>
+          </Container>
 
-        </Container>
-      </Box>
+        </Box>
+        
+      </Container>
 
-      <div className="flex item-center">
+
+
+      <div className="flex items-center px-16">
 
         <div className="px-3">
-          <Box className="shadow-2xl" padding_y="py-16">
+          <Box className="shadow-xl" padding_y="py-16">
             <div className="h-[150px] relative">
               <Image
                 fill
@@ -90,7 +99,7 @@ export default async function Index() {
 
 
         <div className="px-3">
-          <Box className="shadow-2xl" padding_y="py-16">
+          <Box className="shadow-xl" padding_y="py-16">
             <div className="h-[150px] relative">
               <Image
                 fill
@@ -116,7 +125,7 @@ export default async function Index() {
         </div>
 
         <div className="px-3">
-          <Box className="shadow-2xl" padding_y="py-16">
+          <Box className="shadow-xl" padding_y="py-16">
             <div className="h-[150px] relative">
               <Image
                 fill
@@ -141,7 +150,7 @@ export default async function Index() {
         </div>
 
         <div className="px-3">
-          <Box className="shadow-2xl" padding_y="py-16">
+          <Box className="shadow-xl" padding_y="py-16">
             <div className="h-[150px] relative">
               <Image
                 fill
@@ -166,7 +175,7 @@ export default async function Index() {
         </div>
 
         <div className="px-3">
-          <Box className="shadow-2xl" padding_y="py-16">
+          <Box className="shadow-xl" padding_y="py-16">
             <div className="h-[150px] relative">
               <Image
                 fill
@@ -191,9 +200,11 @@ export default async function Index() {
         </div>
       </div>
 
-
-      <Box className="shadow-2xl">
+<Container className="py-8 space-y-10">
+      <Box className="shadow-xl">
       </Box>
+
+      </Container>
 
 
     </>
