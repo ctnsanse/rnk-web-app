@@ -46,7 +46,7 @@ export default async function monespace() {
       <div className="grid grid-cols-12 gap-1 py-24 px-8">
 
       <div className="grid grid-col col-span-3 gap-7 py-12 overflow-hidden">
-        <Box className="max-w-xs bg-blue-100">
+        <Box className="max-w-xs bg-gray-500">
           <div className="flex flex-col items-center gap-5">
             <Typography variant="caption1" component="div" theme="black">
               Version Premium
@@ -62,7 +62,7 @@ export default async function monespace() {
             />
           </div>
         </Box>
-        <Box className="max-w-xs bg-blue-100">
+        <Box className="max-w-xs bg-gray-500">
           <div className="flex flex-col items-center gap-5">
             <Typography variant="caption1" component="div" theme="black">
               Version Premium
@@ -78,7 +78,7 @@ export default async function monespace() {
             />
           </div>
         </Box>
-        <Box className="max-w-xs bg-blue-100">
+        <Box className="max-w-xs bg-gray-500">
           <div className="flex flex-col items-center gap-5">
             <Typography variant="caption1" component="div" theme="black">
               Version Premium

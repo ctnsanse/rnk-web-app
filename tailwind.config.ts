@@ -44,7 +44,7 @@ const config = {
           warning: "#FEB72F",
         },
         blue: {
-          100: "#dbeafe",
+          100: "#cffafe",
           200: "#a5f3fc",
           300: "#7dd3fc",
           400: "#38bdf8",
