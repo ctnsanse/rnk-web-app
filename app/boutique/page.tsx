@@ -2,12 +2,15 @@ import { createClient } from "@/utils/supabase/server";
 import { notFound, redirect } from "next/navigation";
 import NotFound from "@/components/errors/not-found";
 import Link from "next/link";
-import { RiArrowRightLine, RiHome3Line } from "react-icons/ri";
+import { RiArrowRightLine, RiHome3Line, RiShoppingBag2Line } from "react-icons/ri";
 import { Typography } from "@/components/design-system/typography/typography";
 import { Box } from "@/components/box/box";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { Container } from "@/components/container/container";
+import { IoMdMale } from "react-icons/io";
+import { IoMdFemale } from "react-icons/io";
+import { FaChildReaching } from "react-icons/fa6";
 import {
     Breadcrumb,
     BreadcrumbItem,
@@ -50,6 +53,10 @@ export default async function shop() {
                         <BreadcrumbItem>
                             <BreadcrumbLink href="/mon-espace"><RiHome3Line className="inline -mt-1" /></BreadcrumbLink>
                         </BreadcrumbItem>
+                        <BreadcrumbSeparator />
+                        <BreadcrumbItem>
+                            <BreadcrumbLink href="/boutique">Boutique{" "}<RiShoppingBag2Line className="inline -mt-1"/></BreadcrumbLink>
+                        </BreadcrumbItem>
                     </BreadcrumbList>
                 </Breadcrumb>
             </div>
@@ -58,14 +65,26 @@ export default async function shop() {
 
                 <div className="grid grid-col col-span-3 gap-7 py-12 overflow-hidden">
 
-                    <Box className="max-w-xs bg-gray-500">
+                    <Box className="max-w-xs">
                         <div className="flex flex-col items-center gap-5">
-                            <Typography variant="caption1" component="div" theme="black">
-                                Version Premium
+                            <Typography variant="h4" component="div" theme="black">
+                                Catégories
                             </Typography>
-                            <Button>
-                                Acheter
-                            </Button>
+                            <a href="/boutique/homme" target="_blank" className="font-bold hover:underline">
+                                <Typography variant="caption2" component="div" theme="black">
+                                    Homme <IoMdMale className="inline -mt-1"/>
+                                </Typography>
+                            </a>
+                            <a href="/boutique/femme" target="_blank" className="font-bold hover:underline">
+                                <Typography variant="caption2" component="div" theme="black">
+                                    Femme <IoMdFemale className="inline -mt-1"/>
+                                </Typography>
+                            </a>
+                            <a href="/boutique/enfants" target="_blank" className="font-bold hover:underline">
+                                <Typography variant="caption2" component="div" theme="black">
+                                    Enfant <FaChildReaching className="inline -mt-1"/>
+                                </Typography>
+                            </a>
                         </div>
                     </Box>
 

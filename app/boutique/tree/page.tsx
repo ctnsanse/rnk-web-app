@@ -112,7 +112,7 @@ export default async function shopTree() {
                             <PaginationLink href="/boutique">1</PaginationLink>
                         </PaginationItem>
                         <PaginationItem>
-                            <PaginationLink href="/two">2</PaginationLink>
+                            <PaginationLink href="/boutique/two">2</PaginationLink>
                         </PaginationItem>
                         <PaginationItem>
                             <PaginationLink href="/tree">3</PaginationLink>
