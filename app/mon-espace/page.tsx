@@ -16,10 +16,10 @@ import { Box } from "@/components/box/box";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { Container } from "@/components/container/container";
+import FetchDataSteps from "@/components/tutorial/fetch-data-steps";
 
-export default async function monespace() {
 
-  // Fonction Session for only user connected
+export default async function Profile() {
   const supabase = createClient();
 
   const {
@@ -27,7 +27,7 @@ export default async function monespace() {
   } = await supabase.auth.getUser();
 
   if (!user) {
-    return NotFound();
+    return redirect("/sign-in");
   }
 
   return (

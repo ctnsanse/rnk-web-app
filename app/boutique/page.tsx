@@ -2,7 +2,7 @@ import { createClient } from "@/utils/supabase/server";
 import { notFound, redirect } from "next/navigation";
 import NotFound from "@/components/errors/not-found";
 import Link from "next/link";
-import { RiArrowRightLine, RiHome3Line, RiShoppingBag2Line } from "react-icons/ri";
+import { RiArrowRightLine, RiHome3Line, RiShoppingBag2Line, RiShoppingBag3Line } from "react-icons/ri";
 import { Typography } from "@/components/design-system/typography/typography";
 import { Box } from "@/components/box/box";
 import { Button } from "@/components/ui/button";
@@ -55,7 +55,7 @@ export default async function shop() {
                         </BreadcrumbItem>
                         <BreadcrumbSeparator />
                         <BreadcrumbItem>
-                            <BreadcrumbLink href="/boutique">Boutique{" "}<RiShoppingBag2Line className="inline -mt-1"/></BreadcrumbLink>
+                            <BreadcrumbLink href="/boutique">Boutique{" "}<RiShoppingBag2Line className="inline -mt-1" /></BreadcrumbLink>
                         </BreadcrumbItem>
                     </BreadcrumbList>
                 </Breadcrumb>
@@ -72,23 +72,23 @@ export default async function shop() {
                             </Typography>
                             <a href="/boutique/homme" target="_blank" className="font-bold hover:underline">
                                 <Typography variant="caption2" component="div" theme="black">
-                                    Homme <IoMdMale className="inline -mt-1"/>
+                                    Homme <IoMdMale className="inline -mt-1" />
                                 </Typography>
                             </a>
                             <a href="/boutique/femme" target="_blank" className="font-bold hover:underline">
                                 <Typography variant="caption2" component="div" theme="black">
-                                    Femme <IoMdFemale className="inline -mt-1"/>
+                                    Femme <IoMdFemale className="inline -mt-1" />
                                 </Typography>
                             </a>
                             <a href="/boutique/enfants" target="_blank" className="font-bold hover:underline">
                                 <Typography variant="caption2" component="div" theme="black">
-                                    Enfant <FaChildReaching className="inline -mt-1"/>
+                                    Enfant <FaChildReaching className="inline -mt-1" />
                                 </Typography>
                             </a>
                         </div>
                     </Box>
 
-                    <Box className="max-w-xs bg-gray-500">
+                    <Box className="max-w-xs bg-violet-200 shadow-2xl border-gray">
                         <div className="flex flex-col items-center gap-5">
                             <Typography variant="caption1" component="div" theme="black">
                                 Version Premium
@@ -97,7 +97,7 @@ export default async function shop() {
                                 Acheter
                             </Button>
                             <Image
-                                src="/assets/svg/premium.svg"
+                                src="/assets/svg/diamant.svg"
                                 alt="Illustration du pass premium"
                                 width={100}
                                 height={100}
@@ -106,9 +106,26 @@ export default async function shop() {
                     </Box>
                 </div>
 
-                <div className="flex flex-col justify-between col-span-4 gap-10">
-                    <Box>
-
+                <div className="flex flex-col items-center justify-between col-span-4 gap-10 px-20">
+                    <Box className="flex flex-col gap-8 shadow-lg">
+                        <div className="flex items-center flex-col">
+                        <Image
+                            src="/assets/images/formule-1.png"
+                            alt="Formule n°1 White"
+                            width={250}
+                            height={250}
+                            className="rounded-lg"
+                        />
+                        </div>
+                        <Button>
+                            <RiShoppingBag3Line />
+                        </Button>
+                        <Typography variant="caption1" component="p" theme="black">
+                        Modèle : Formule 1 White
+                        </Typography>
+                        <Typography variant="caption3" component="p" theme="black">
+                            Taille : 38/39/40/41/42
+                        </Typography>
                     </Box>
                 </div>
 
