@@ -97,36 +97,11 @@ export default function RootLayout({
                     </p>
                   </Link>
 
-                  <DropdownMenu>
-                    <DropdownMenuTrigger>
-                      <p>
-                        Boutique
-                      </p>
-                    </DropdownMenuTrigger>
-                    <DropdownMenuContent>
-                      <DropdownMenuLabel>Boutique</DropdownMenuLabel>
-                      <DropdownMenuSeparator />
-
-                      <Link href="/sign-in">
-                        <DropdownMenuItem>
-                          Homme
-                        </DropdownMenuItem>
-                      </Link>
-
-                      <Link href="/sign-in">
-                        <DropdownMenuItem>
-                          Femme
-                        </DropdownMenuItem>
-                      </Link>
-
-                      <Link href="/sign-in">
-                        <DropdownMenuItem>
-                          Enfant
-                        </DropdownMenuItem>
-                      </Link>
-
-                    </DropdownMenuContent>
-                  </DropdownMenu>
+                  <Link href="/boutique">
+                    <p>
+                      Boutique
+                    </p>
+                  </Link>
                 </div>
 
               </div>

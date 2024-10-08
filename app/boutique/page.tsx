@@ -63,7 +63,7 @@ export default async function shop() {
 
             <div className="grid grid-cols-12 gap-3 py-24 px-8">
 
-                <div className="grid grid-col col-span-3 gap-7 py-12 overflow-hidden">
+                <div className="grid grid-col items-center col-span-3 py-48 overflow-hidden">
 
                     <Box className="max-w-xs">
                         <div className="flex flex-col items-center gap-5">
@@ -88,7 +88,7 @@ export default async function shop() {
                         </div>
                     </Box>
 
-                    <Box className="max-w-xs bg-violet-200 shadow-2xl border-gray">
+                    <Box className="max-w-xs bg-violet-300 shadow-2xl border-gray">
                         <div className="flex flex-col items-center gap-5">
                             <Typography variant="caption1" component="div" theme="black">
                                 Version Premium
@@ -107,6 +107,7 @@ export default async function shop() {
                 </div>
 
                 <div className="flex flex-col items-center justify-between col-span-4 gap-10 px-20">
+
                     <Box className="flex flex-col gap-8 shadow-lg">
                         <div className="flex items-center flex-col">
                         <Image
@@ -121,18 +122,80 @@ export default async function shop() {
                             <RiShoppingBag3Line />
                         </Button>
                         <Typography variant="caption1" component="p" theme="black">
-                        Modèle : Formule 1 White
+                        Modèle : Formule 1 W
                         </Typography>
                         <Typography variant="caption3" component="p" theme="black">
                             Taille : 38/39/40/41/42
                         </Typography>
                     </Box>
+                    
+                    <Box className="flex flex-col gap-8 shadow-lg">
+                        <div className="flex items-center flex-col">
+                        <Image
+                            src="/assets/images/formule-2.png"
+                            alt="Formule n°2 Black"
+                            width={250}
+                            height={250}
+                            className="rounded-lg"
+                        />
+                        </div>
+                        <Button>
+                            <RiShoppingBag3Line />
+                        </Button>
+                        <Typography variant="caption1" component="p" theme="black">
+                        Modèle : Formule 2 B
+                        </Typography>
+                        <Typography variant="caption3" component="p" theme="black">
+                            Taille : 38/39/40/41/42
+                        </Typography>
+                    </Box>
+
                 </div>
 
-                <div className="flex flex-col justify-between col-span-4 gap-10">
-                    <Box>
+                <div className="flex flex-col items-center justify-between col-span-4 gap-10 px-20">
 
+                <Box className="flex flex-col gap-8 shadow-lg">
+                        <div className="flex items-center flex-col">
+                        <Image
+                            src="/assets/images/formule-3.png"
+                            alt="Formule n°3 White"
+                            width={250}
+                            height={250}
+                            className="rounded-lg"
+                        />
+                        </div>
+                        <Button>
+                            <RiShoppingBag3Line />
+                        </Button>
+                        <Typography variant="caption1" component="p" theme="black">
+                        Modèle : Formule 3 W
+                        </Typography>
+                        <Typography variant="caption3" component="p" theme="black">
+                            Taille : 38/39/40/41/42
+                        </Typography>
                     </Box>
+
+                    <Box className="flex flex-col gap-8 shadow-lg">
+                        <div className="flex items-center flex-col">
+                        <Image
+                            src="/assets/images/formule-4.png"
+                            alt="Formule n°4 BW"
+                            width={250}
+                            height={250}
+                            className="rounded-lg"
+                        />
+                        </div>
+                        <Button>
+                            <RiShoppingBag3Line />
+                        </Button>
+                        <Typography variant="caption1" component="p" theme="black">
+                        Modèle : Formule 4 BW
+                        </Typography>
+                        <Typography variant="caption3" component="p" theme="black">
+                            Taille : 38/39/40/41/42
+                        </Typography>
+                    </Box>
+
                 </div>
 
             </div>
@@ -157,7 +220,7 @@ export default async function shop() {
                             <PaginationEllipsis />
                         </PaginationItem>
                         <PaginationItem>
-                            <PaginationNext href="#" />
+                            <PaginationNext href="boutique/two" />
                         </PaginationItem>
                     </PaginationContent>
                 </Pagination>
