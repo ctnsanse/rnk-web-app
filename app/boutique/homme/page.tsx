@@ -29,7 +29,7 @@ import {
 } from "@/components/pagination/pagination";
 
 
-export default async function shopTree() {
+export default async function masculinShop() {
 
     // Fonction Session for only user connected
     const supabase = createClient();
@@ -58,7 +58,7 @@ export default async function shopTree() {
                         </BreadcrumbItem>
                         <BreadcrumbSeparator />
                         <BreadcrumbItem>
-                            <BreadcrumbLink href="/boutique/two">Page 3</BreadcrumbLink>
+                            <BreadcrumbLink href="/boutique/homme">Homme{" "}<IoMdMale className="inline -mt-1"/></BreadcrumbLink>
                         </BreadcrumbItem>
                     </BreadcrumbList>
                 </Breadcrumb>
@@ -66,7 +66,7 @@ export default async function shopTree() {
 
             <div className="grid grid-cols-12 gap-3 py-24 px-8">
 
-                <div className="grid grid-col items-center col-span-3 py-48 overflow-hidden">
+                <div className="grid grid-col items-center col-span-3 py-96 overflow-hidden">
 
                     <Box className="max-w-xs">
                         <div className="flex flex-col items-center gap-5">
@@ -113,120 +113,190 @@ export default async function shopTree() {
 
                     <Box className="flex flex-col gap-8 shadow-lg">
                         <div className="flex items-center flex-col">
+                        <Image
+                            src="/assets/images/formule-1.png"
+                            alt="Formule n°1 White"
+                            width={250}
+                            height={250}
+                            className="rounded-lg"
+                        />
+                        </div>
+                        <Button>
+                            <RiShoppingBag3Line />
+                        </Button>
+                        <Typography variant="caption1" component="p" theme="black">
+                        Modèle : Formule 1 W
+                        </Typography>
+                        <Typography variant="caption3" component="p" theme="black">
+                            Taille : 38/39/40/41/42
+                        </Typography>
+                    </Box>
+                    
+                    <Box className="flex flex-col gap-8 shadow-lg">
+                        <div className="flex items-center flex-col">
+                        <Image
+                            src="/assets/images/formule-2.png"
+                            alt="Formule n°2 Black"
+                            width={250}
+                            height={250}
+                            className="rounded-lg"
+                        />
+                        </div>
+                        <Button>
+                            <RiShoppingBag3Line />
+                        </Button>
+                        <Typography variant="caption1" component="p" theme="black">
+                        Modèle : Formule 2 B
+                        </Typography>
+                        <Typography variant="caption3" component="p" theme="black">
+                            Taille : 38/39/40/41/42
+                        </Typography>
+                    </Box>
+                    <Box className="flex flex-col gap-8 shadow-lg">
+                        <div className="flex items-center flex-col">
                             <Image
-                                src="/assets/images/formule-9.png"
-                                alt="Formule n°9 Pink"
+                                src="/assets/images/formule-5.png"
+                                alt="Formule n°5 Black"
                                 width={250}
                                 height={250}
                                 className="rounded-lg"
                             />
                         </div>
                         <Button>
-                            <RiShoppingBag3Line />
+                            <Link href="/panier">
+                                <RiShoppingBag3Line />
+                            </Link>
                         </Button>
                         <Typography variant="caption1" component="p" theme="black">
-                            Modèle : Formule 9 P
+                            Modèle : Formule 5 B
                         </Typography>
                         <Typography variant="caption3" component="p" theme="black">
-                            Taille : 36/37/38/39
+                            Taille : 38/39/40/41/42
                         </Typography>
                     </Box>
 
                     <Box className="flex flex-col gap-8 shadow-lg">
-                        <div className="flex items-center flex-col">
+
+                        <div className="flex items-center flex-col gap-7">
                             <Image
-                                src="/assets/images/formule-10.png"
-                                alt="Formule n°10 White Pink"
+                                src="/assets/images/formule-6.png"
+                                alt="Formule n°6 White"
                                 width={250}
                                 height={250}
                                 className="rounded-lg"
                             />
+
+                            <Link href="/panier">
+                                <Button className="px-20">
+                                    <RiShoppingBag3Line />
+                                </Button>
+                            </Link>
+
                         </div>
-                        <Button>
-                            <RiShoppingBag3Line />
-                        </Button>
+
+
                         <Typography variant="caption1" component="p" theme="black">
-                            Modèle : Formule 10 WP
+                            Modèle : Formule 6 W
                         </Typography>
                         <Typography variant="caption3" component="p" theme="black">
-                            Taille : 36/37/38/39
+                            Taille : 38/39/40/41/42
                         </Typography>
+
                     </Box>
 
                 </div>
 
                 <div className="flex flex-col items-center justify-between col-span-4 gap-10 px-20">
 
+                <Box className="flex flex-col gap-8 shadow-lg">
+                        <div className="flex items-center flex-col">
+                        <Image
+                            src="/assets/images/formule-3.png"
+                            alt="Formule n°3 White"
+                            width={250}
+                            height={250}
+                            className="rounded-lg"
+                        />
+                        </div>
+                        <Button>
+                            <RiShoppingBag3Line />
+                        </Button>
+                        <Typography variant="caption1" component="p" theme="black">
+                        Modèle : Formule 3 W
+                        </Typography>
+                        <Typography variant="caption3" component="p" theme="black">
+                            Taille : 38/39/40/41/42
+                        </Typography>
+                    </Box>
+
+                    <Box className="flex flex-col gap-8 shadow-lg">
+                        <div className="flex items-center flex-col">
+                        <Image
+                            src="/assets/images/formule-4.png"
+                            alt="Formule n°4 BW"
+                            width={250}
+                            height={250}
+                            className="rounded-lg"
+                        />
+                        </div>
+                        <Button>
+                            <RiShoppingBag3Line />
+                        </Button>
+                        <Typography variant="caption1" component="p" theme="black">
+                        Modèle : Formule 4 BW
+                        </Typography>
+                        <Typography variant="caption3" component="p" theme="black">
+                            Taille : 38/39/40/41/42
+                        </Typography>
+                    </Box>
                     <Box className="flex flex-col gap-8 shadow-lg">
                         <div className="flex items-center flex-col">
                             <Image
-                                src="/assets/images/formule-11.png"
-                                alt="Formule n°11 Black Red"
+                                src="/assets/images/formule-7.png"
+                                alt="Formule n°7 White Black"
                                 width={250}
                                 height={250}
                                 className="rounded-lg"
                             />
                         </div>
                         <Button>
-                            <RiShoppingBag3Line />
+                            <Link href="/panier">
+                                <RiShoppingBag3Line />
+                            </Link>
                         </Button>
                         <Typography variant="caption1" component="p" theme="black">
-                            Modèle : Formule 11 BR
+                            Modèle : Formule 7 WB
                         </Typography>
                         <Typography variant="caption3" component="p" theme="black">
-                            Taille : 23/24/25/26
+                            Taille : 38/39/40/41/42
                         </Typography>
                     </Box>
 
                     <Box className="flex flex-col gap-8 shadow-lg">
                         <div className="flex items-center flex-col">
                             <Image
-                                src="/assets/images/formule-12.png"
-                                alt="Formule n°12 Black White"
+                                src="/assets/images/formule-8.png"
+                                alt="Formule n°8 Black Red"
                                 width={250}
                                 height={350}
                                 className="rounded-lg"
                             />
                         </div>
                         <Button>
-                            <RiShoppingBag3Line />
+                            <Link href="/panier">
+                                <RiShoppingBag3Line />
+                            </Link>
                         </Button>
                         <Typography variant="caption1" component="p" theme="black">
-                            Modèle : Formule 8 BW
+                            Modèle : Formule 8 BR
                         </Typography>
                         <Typography variant="caption3" component="p" theme="black">
-                            Taille : 23/24/25/26
+                            Taille : 38/39/40/41/42
                         </Typography>
                     </Box>
 
                 </div>
 
-            </div>
-
-
-            <div className="flex items-center pb-6">
-                <Pagination>
-                    <PaginationContent>
-                        <PaginationItem>
-                            <PaginationPrevious href="/boutique/two" />
-                        </PaginationItem>
-                        <PaginationItem>
-                            <PaginationLink href="/boutique">1</PaginationLink>
-                        </PaginationItem>
-                        <PaginationItem>
-                            <PaginationLink href="/boutique/two">2</PaginationLink>
-                        </PaginationItem>
-                        <PaginationItem>
-                            <PaginationLink href="/tree">3</PaginationLink>
-                        </PaginationItem>
-                        <PaginationItem>
-                            <PaginationEllipsis />
-                        </PaginationItem>
-                        <PaginationItem>
-                            <PaginationNext href="#" />
-                        </PaginationItem>
-                    </PaginationContent>
-                </Pagination>
             </div>
 
         </>
