@@ -70,17 +70,17 @@ export default async function shop() {
                             <Typography variant="h4" component="div" theme="black">
                                 Catégories
                             </Typography>
-                            <a href="/boutique/homme" target="_blank" className="font-bold hover:underline">
+                            <a href="/boutique/homme"  className="font-bold hover:underline">
                                 <Typography variant="caption2" component="div" theme="black">
                                     Homme <IoMdMale className="inline -mt-1" />
                                 </Typography>
                             </a>
-                            <a href="/boutique/femme" target="_blank" className="font-bold hover:underline">
+                            <a href="/boutique/femme"  className="font-bold hover:underline">
                                 <Typography variant="caption2" component="div" theme="black">
                                     Femme <IoMdFemale className="inline -mt-1" />
                                 </Typography>
                             </a>
-                            <a href="/boutique/enfants" target="_blank" className="font-bold hover:underline">
+                            <a href="/boutique/enfants"  className="font-bold hover:underline">
                                 <Typography variant="caption2" component="div" theme="black">
                                     Enfant <FaChildReaching className="inline -mt-1" />
                                 </Typography>
@@ -108,7 +108,7 @@ export default async function shop() {
 
                 <div className="flex flex-col items-center justify-between col-span-4 gap-10 px-20">
 
-                    <Box className="flex flex-col gap-8 shadow-lg">
+                    <Box className="flex flex-col items-center gap-5 shadow-lg">
                         <div className="flex items-center flex-col">
                         <Image
                             src="/assets/images/formule-1.png"
@@ -118,9 +118,14 @@ export default async function shop() {
                             className="rounded-lg"
                         />
                         </div>
+                        <Link href="https://buy.stripe.com/test_8wMbL950M2uI892fYZ" target="_blank">
                         <Button>
-                            <RiShoppingBag3Line />
+                            <p>Acheter{" "}<RiShoppingBag3Line className="inline-flex"/></p>
                         </Button>
+                        </Link>
+                        <Typography variant="caption1" component="p" theme="black" className="font-bold">
+                        Prix: 100€
+                        </Typography>
                         <Typography variant="caption1" component="p" theme="black">
                         Modèle : Formule 1 W
                         </Typography>
