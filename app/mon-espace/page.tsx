@@ -23,6 +23,9 @@ import Image from "next/image";
 import { Container } from "@/components/container/container";
 import FetchDataSteps from "@/components/tutorial/fetch-data-steps";
 import { Input } from "@/components/ui/input";
+import ProfileForm from "@/components/form";
+import { createServerClient } from "@supabase/ssr";
+import { cookies } from "next/headers";
 
 
 export default function Profile() {
@@ -45,8 +48,6 @@ export default function Profile() {
     rating2: '',
     date_of_bird2: '',
   })
-
-  console.log(user2)
 
   useEffect(() => {
     fetchUsers()
@@ -196,8 +197,6 @@ export default function Profile() {
           </Typography>
 
           <Box>
-
-
 
             {/* {FORM} */}
 

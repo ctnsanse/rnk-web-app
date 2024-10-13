@@ -70,7 +70,7 @@ export default async function Index() {
 
 
 
-      <div className="flex items-center px-16">
+      <div className="flex items-center px-16 py-8">
 
         <div className="px-3">
           <Box className="shadow-xl" padding_y="py-16">
@@ -199,13 +199,6 @@ export default async function Index() {
           </Box>
         </div>
       </div>
-
-<Container className="py-8 space-y-10">
-      <Box className="shadow-xl">
-      </Box>
-
-      </Container>
-
 
     </>
   );
