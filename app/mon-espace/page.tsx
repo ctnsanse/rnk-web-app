@@ -23,7 +23,6 @@ import Image from "next/image";
 import { Container } from "@/components/container/container";
 import FetchDataSteps from "@/components/tutorial/fetch-data-steps";
 import { Input } from "@/components/ui/input";
-import ProfileForm from "@/components/form";
 import { createServerClient } from "@supabase/ssr";
 import { cookies } from "next/headers";
 
