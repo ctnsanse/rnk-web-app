@@ -29,7 +29,7 @@ import { cookies } from "next/headers";
 
 export default function Profile() {
 
-  const [users, setUsers] = useState<any[] | null>(null)
+  const [users, setUsers] = useState()
 
   const [user, setUser] = useState({
     prenom: '',
@@ -59,7 +59,7 @@ export default function Profile() {
     setUsers(data)
   }
 
-  function handleChange(event: React.FormEvent<HTMLFormElement>) {
+  function handleChange(event) {
     setUser(prevFormData => {
       return {
         ...prevFormData,
