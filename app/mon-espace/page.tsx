@@ -29,7 +29,7 @@ import { cookies } from "next/headers";
 
 export default function Profile() {
 
-  const [users, setUsers] = useState()
+  const [users, setUsers] = useState<users[] | undefined>(undefined)
 
   const [user, setUser] = useState({
     prenom: '',
