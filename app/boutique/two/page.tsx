@@ -111,7 +111,7 @@ export default async function shopTwo() {
 
                 <div className="flex flex-col items-center justify-between col-span-4 gap-10 px-20">
 
-                    <Box className="flex flex-col gap-8 shadow-lg">
+                    <Box className="flex flex-col items-center gap-8 shadow-lg">
                         <div className="flex items-center flex-col">
                             <Image
                                 src="/assets/images/formule-5.png"
@@ -121,11 +121,15 @@ export default async function shopTwo() {
                                 className="rounded-lg"
                             />
                         </div>
+                        <Link href="https://buy.stripe.com/test_3cscPdeBmb1eexqfZ3" target="_blank">
                         <Button>
-                            <Link href="/panier">
-                                <RiShoppingBag3Line />
-                            </Link>
+                            <p>Acheter{" "}<RiShoppingBag3Line className="inline-flex -mt-1"/></p>
                         </Button>
+                        </Link>
+
+                        <Typography variant="caption1" component="p" theme="black" className="font-bold">
+                        Prix: 100€
+                        </Typography>
                         <Typography variant="caption1" component="p" theme="black">
                             Modèle : Formule 5 B
                         </Typography>
@@ -134,7 +138,7 @@ export default async function shopTwo() {
                         </Typography>
                     </Box>
 
-                    <Box className="flex flex-col gap-8 shadow-lg">
+                    <Box className="flex flex-col items-center gap-8 shadow-lg">
 
                         <div className="flex items-center flex-col gap-7">
                             <Image
@@ -145,14 +149,17 @@ export default async function shopTwo() {
                                 className="rounded-lg"
                             />
 
-                            <Link href="/panier">
-                                <Button className="px-20">
-                                    <RiShoppingBag3Line />
-                                </Button>
-                            </Link>
-
                         </div>
 
+                        <Link href="https://buy.stripe.com/test_4gwcPd78Ud9m9d67sy" target="_blank">
+                        <Button>
+                            <p>Acheter{" "}<RiShoppingBag3Line className="inline-flex -mt-1"/></p>
+                        </Button>
+                        </Link>
+
+                        <Typography variant="caption1" component="p" theme="black" className="font-bold">
+                        Prix: 100€
+                        </Typography>
 
                         <Typography variant="caption1" component="p" theme="black">
                             Modèle : Formule 6 W
@@ -167,7 +174,7 @@ export default async function shopTwo() {
 
                 <div className="flex flex-col items-center justify-between col-span-4 gap-10 px-20">
 
-                    <Box className="flex flex-col gap-8 shadow-lg">
+                    <Box className="flex flex-col items-center gap-8 shadow-lg">
                         <div className="flex items-center flex-col">
                             <Image
                                 src="/assets/images/formule-7.png"
@@ -177,11 +184,15 @@ export default async function shopTwo() {
                                 className="rounded-lg"
                             />
                         </div>
+                        <Link href="https://buy.stripe.com/test_eVaeXl8cYc5i1KEdQX" target="_blank">
                         <Button>
-                            <Link href="/panier">
-                                <RiShoppingBag3Line />
-                            </Link>
+                            <p>Acheter{" "}<RiShoppingBag3Line className="inline-flex -mt-1"/></p>
                         </Button>
+                        </Link>
+
+                        <Typography variant="caption1" component="p" theme="black" className="font-bold">
+                        Prix: 100€
+                        </Typography>
                         <Typography variant="caption1" component="p" theme="black">
                             Modèle : Formule 7 WB
                         </Typography>
@@ -190,7 +201,7 @@ export default async function shopTwo() {
                         </Typography>
                     </Box>
 
-                    <Box className="flex flex-col gap-8 shadow-lg">
+                    <Box className="flex flex-col items-center gap-8 shadow-lg">
                         <div className="flex items-center flex-col">
                             <Image
                                 src="/assets/images/formule-8.png"
@@ -200,11 +211,15 @@ export default async function shopTwo() {
                                 className="rounded-lg"
                             />
                         </div>
+                        <Link href="https://buy.stripe.com/test_bIY4iHbpa7P2cpi5ks" target="_blank">
                         <Button>
-                            <Link href="/panier">
-                                <RiShoppingBag3Line />
-                            </Link>
+                            <p>Acheter{" "}<RiShoppingBag3Line className="inline-flex -mt-1"/></p>
                         </Button>
+                        </Link>
+
+                        <Typography variant="caption1" component="p" theme="black" className="font-bold">
+                        Prix: 100€
+                        </Typography>
                         <Typography variant="caption1" component="p" theme="black">
                             Modèle : Formule 8 BR
                         </Typography>

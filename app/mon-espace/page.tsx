@@ -1,3 +1,8 @@
+"use client"
+
+import { InfoIcon } from "lucide-react";
+import React, { useEffect, useId, useState } from "react";
+import { supabase } from "@/config/createClient";
 import { createClient } from "@/utils/supabase/server";
 import { notFound, redirect } from "next/navigation";
 import NotFound from "@/components/errors/not-found";
@@ -20,15 +25,101 @@ import FetchDataSteps from "@/components/tutorial/fetch-data-steps";
 import { Input } from "@/components/ui/input";
 
 
-export default async function Profile() {
-  const supabase = createClient();
+export default function Profile() {
 
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
+  const [users, setUsers] = useState()
 
-  if (!user) {
-    return redirect("/sign-in");
+  const [user, setUser] = useState({
+    prenom: '',
+    nom: '',
+    email: '',
+    rating: '',
+    date_of_bird: '',
+  })
+
+  const [user2, setUser2] = useState({
+    id: '',
+    prenom2: '',
+    nom2: '',
+    email2: '',
+    rating2: '',
+    date_of_bird2: '',
+  })
+
+  console.log(user2)
+
+  useEffect(() => {
+    fetchUsers()
+  }, [])
+
+  async function fetchUsers() {
+    const { data } = await supabase
+      .from("users")
+      .select('*')
+    setUsers(data)
+  }
+
+  function handleChange(event) {
+    setUser(prevFormData => {
+      return {
+        ...prevFormData,
+        [event.target.name]: event.target.value
+      }
+    })
+  }
+
+  function handleChange2(event) {
+    setUser2(prevFormData => {
+      return {
+        ...prevFormData,
+        [event.target.name]: event.target.value
+      }
+    })
+  }
+
+  function displayUser(userId) {
+
+    users.map((user) => {
+
+      if (user.id == userId) {
+        setUser2({
+          id: user.id,
+          prenom: user.prenom,
+          nom: user.nom,
+          email: user.email,
+          rating: user.rating,
+          date_of_bird: user.date_of_bird,
+        })
+      }
+
+    })
+
+
+  }
+
+  async function updateUser(userId) {
+    const { data, error } = await supabase
+      .from("users")
+      .update({
+        id: user2.id,
+        prenom: user2.prenom,
+        nom: user2.nom,
+        email: user2.email,
+        rating: user2.rating,
+        date_of_bird: user2.date_of_bird,
+      })
+      .eq("id", userId)
+
+    fetchUsers()
+
+    if (error) {
+      console.log(error)
+    }
+
+    if (data) {
+      console.log(data)
+    }
+
   }
 
   return (
@@ -79,7 +170,7 @@ export default async function Profile() {
                 Sponsor
               </Typography>
 
-              <Link href="/panier">
+              <Link href="https://www.nike.com/fr/" target="_blank">
                 <Button>
                   Voir
                 </Button>
@@ -106,32 +197,94 @@ export default async function Profile() {
 
           <Box>
 
-            <div className="flex flex-col gap-6">
 
-              <Typography variant="caption2" component="p" theme="black">
-                Prénom
-              </Typography>
-              <Input />
 
-              <Typography variant="caption2" component="p" theme="black">
-                Nom
-              </Typography>
-              <Input />
+            {/* {FORM} */}
 
-              <Typography variant="caption2" component="p" theme="black">
-                Adresse E-mail
-              </Typography>
-              <Input />
+            <form onSubmit={() => updateUser(user2.id)}>
 
-              <Typography variant="caption2" component="p" theme="black">
-                Date de naissance
-              </Typography>
-              <Input />
+              <div className="flex flex-col gap-6">
 
-              <Button>
-                Enregistrer
-              </Button>
+                <Typography variant="caption2" component="p" theme="black" className="font-bold inline-flex">
+                  Prénom :
+                  {users && users.map((user) =>
+                    <p className="flex px-1 font-normal">{user.prenom}</p>
+                  )}
+                </Typography>
 
+                <Input
+                  type="text"
+                  name='prenom'
+                  onChange={handleChange2}
+                  defaultValue={user2.prenom}
+                />
+
+                <Typography variant="caption2" component="p" theme="black" className="font-bold inline-flex">
+                  Nom :
+                  {users && users.map((user) =>
+                    <p className="flex px-1 font-normal">{user.nom}</p>
+                  )}
+                </Typography>
+                <Input
+                  type="text"
+                  name='nom'
+                  onChange={handleChange2}
+                  defaultValue={user2.nom}
+                />
+
+                <Typography variant="caption2" component="p" theme="black" className="font-bold inline-flex">
+                  Adresse E-mail :
+                  {users && users.map((user) =>
+                    <p className="flex px-1 font-normal">{user.email}</p>
+                  )}
+                </Typography>
+                <Input
+                  type="text"
+                  name='email'
+                  onChange={handleChange2}
+                  defaultValue={user2.email}
+                />
+
+                <Typography variant="caption2" component="p" theme="black" className="font-bold inline-flex">
+                  Note :
+                  {users && users.map((user) =>
+                    <p className="flex px-1 font-normal">{user.rating}</p>
+                  )}
+                </Typography>
+                <Input
+                  type="text"
+                  name='rating'
+                  onChange={handleChange2}
+                  defaultValue={user2.rating}
+                />
+
+                <Typography variant="caption2" component="p" theme="black" className="font-bold inline-flex">
+                  Date de naissance :
+                  {users && users.map((user) =>
+                    <p className="flex px-1 font-normal">{user.date_of_bird}</p>
+                  )}
+                </Typography>
+                <Input
+                  type="text"
+                  name='date_of_bird'
+                  onChange={handleChange2}
+                  defaultValue={user2.date_of_bird}
+                />
+
+              </div>
+
+              <div className="flex py-5 gap-2">
+
+                <Button type="submit">Save changes</Button>
+
+              </div>
+
+            </form>
+
+            <div className="flex">
+              {users && users.map((user) =>
+                <Button onClick={() => { displayUser(user.id) }}>Edit</Button>
+              )}
             </div>
 
           </Box>

@@ -58,7 +58,7 @@ export default async function childrenShop() {
                         </BreadcrumbItem>
                         <BreadcrumbSeparator />
                         <BreadcrumbItem>
-                            <BreadcrumbLink href="/boutique/enfants">Femme{" "}<IoMdFemale className="inline -mt-1" /></BreadcrumbLink>
+                            <BreadcrumbLink href="/boutique/femme">Femme{" "}<IoMdFemale className="inline -mt-1" /></BreadcrumbLink>
                         </BreadcrumbItem>
                     </BreadcrumbList>
                 </Breadcrumb>
@@ -111,7 +111,7 @@ export default async function childrenShop() {
 
                 <div className="flex flex-col items-center justify-between col-span-4 gap-10 px-20">
 
-                    <Box className="flex flex-col gap-8 shadow-lg">
+                    <Box className="flex flex-col items-center gap-8 shadow-lg">
                         <div className="flex items-center flex-col">
                             <Image
                                 src="/assets/images/formule-10.png"
@@ -121,9 +121,15 @@ export default async function childrenShop() {
                                 className="rounded-lg"
                             />
                         </div>
+                        <Link href="https://buy.stripe.com/test_8wMaH5eBmc5i2OIdR0" target="_blank">
                         <Button>
-                            <RiShoppingBag3Line />
+                            <p>Acheter{" "}<RiShoppingBag3Line className="inline-flex -mt-1"/></p>
                         </Button>
+                        </Link>
+
+                        <Typography variant="caption1" component="p" theme="black" className="font-bold">
+                        Prix: 100€
+                        </Typography>
                         <Typography variant="caption1" component="p" theme="black">
                             Modèle : Formule 10 WP
                         </Typography>
@@ -136,7 +142,7 @@ export default async function childrenShop() {
 
                 <div className="flex flex-col items-center justify-between col-span-4 gap-10 px-20">
 
-                    <Box className="flex flex-col gap-8 shadow-lg">
+                    <Box className="flex flex-col items-center gap-8 shadow-lg">
                         <div className="flex items-center flex-col">
                             <Image
                                 src="/assets/images/formule-9.png"
@@ -146,9 +152,15 @@ export default async function childrenShop() {
                                 className="rounded-lg"
                             />
                         </div>
+                        <Link href="https://buy.stripe.com/test_6oE8yX64Qb1ecpi28h" target="_blank">
                         <Button>
-                            <RiShoppingBag3Line />
+                            <p>Acheter{" "}<RiShoppingBag3Line className="inline-flex -mt-1"/></p>
                         </Button>
+                        </Link>
+
+                        <Typography variant="caption1" component="p" theme="black" className="font-bold">
+                        Prix: 100€
+                        </Typography>
                         <Typography variant="caption1" component="p" theme="black">
                             Modèle : Formule 9 P
                         </Typography>

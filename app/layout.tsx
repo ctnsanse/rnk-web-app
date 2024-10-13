@@ -70,19 +70,19 @@ export default function RootLayout({
                       <DropdownMenuLabel>Réseaux</DropdownMenuLabel>
                       <DropdownMenuSeparator />
 
-                      <Link href="/sign-in">
+                      <Link href="/">
                         <DropdownMenuItem>
                           Snapchat
                         </DropdownMenuItem>
                       </Link>
 
-                      <Link href="/sign-in">
+                      <Link href="https://www.instagram.com/solana/" target="_blank">
                         <DropdownMenuItem>
                           Instagram
                         </DropdownMenuItem>
                       </Link>
 
-                      <Link href="/sign-in">
+                      <Link href="https://x.com/chainsona" target="_blank">
                         <DropdownMenuItem>
                           X
                         </DropdownMenuItem>
@@ -134,7 +134,7 @@ export default function RootLayout({
 
 
 
-              <a href="https://www.nike.com/fr/" target="_blank" className="font-bold hover:underline">
+              <a href="/#" target="_blank" className="font-bold hover:underline">
                 <div className="flex items-center gap-2">
                   <p>
                     Snapchat
@@ -150,7 +150,7 @@ export default function RootLayout({
 
 
 
-              <a href="https://www.nike.com/fr/" target="_blank" className="font-bold hover:underline">
+              <a href="https://www.instagram.com/solana/" target="_blank" className="font-bold hover:underline">
                 <div className="flex items-center gap-2">
                   <p>
                     Instagram
@@ -165,7 +165,7 @@ export default function RootLayout({
               </a>
 
 
-              <a href="https://www.nike.com/fr/" target="_blank" className="font-bold hover:underline">
+              <a href="https://x.com/chainsona" target="_blank" className="font-bold hover:underline">
                 <div className="flex items-center gap-2">
                   <p>
                     X
