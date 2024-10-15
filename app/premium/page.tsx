@@ -1,3 +1,4 @@
+import { Box } from "@/components/box/box";
 import Pricing from "@/components/pricing-section/pricing-section";
 import { createClient } from "@/utils/supabase/server";
 
@@ -14,7 +15,11 @@ export default async function subscription() {
   }
 
   return (
-    <h1>hhhh</h1>
+    <div className="flex">
+      <Box></Box>
+      <Box></Box>
+      <Box></Box>
+    </div>
   )
 
 }

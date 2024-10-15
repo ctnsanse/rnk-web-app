@@ -26,10 +26,17 @@ import { Input } from "@/components/ui/input";
 import { createServerClient } from "@supabase/ssr";
 import { cookies } from "next/headers";
 
+type User {
+  prenom: String;
+  nom: String;
+  email: String;
+  rating: String;
+  date_of_bird: String;
+}
 
 export default function Profile() {
 
-  const [users, setUsers] = useState<users[] | undefined>(undefined)
+  const [users, setUsers] = useState<User[]>([]);
 
   const [user, setUser] = useState({
     prenom: '',
