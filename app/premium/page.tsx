@@ -1,6 +1,6 @@
 import { Box } from "@/components/box/box";
-import Pricing from "@/components/pricing-section/pricing-section";
 import { createClient } from "@/utils/supabase/server";
+import { redirect } from "next/navigation";
 
 
 export default async function subscription() {

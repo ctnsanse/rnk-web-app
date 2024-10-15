@@ -26,19 +26,21 @@ import { Input } from "@/components/ui/input";
 import { createServerClient } from "@supabase/ssr";
 import { cookies } from "next/headers";
 
-type User {
-  prenom: String;
-  nom: String;
-  email: String;
-  rating: String;
-  date_of_bird: String;
+type User = {
+  id: string;
+  prenom: string;
+  nom: string;
+  email: string;
+  rating: string;
+  date_of_bird: string;
 }
 
 export default function Profile() {
 
-  const [users, setUsers] = useState<User[]>([]);
+  const [users, setUsers] = useState < User[] > ([]);
 
   const [user, setUser] = useState({
+    id: '',
     prenom: '',
     nom: '',
     email: '',
@@ -48,11 +50,11 @@ export default function Profile() {
 
   const [user2, setUser2] = useState({
     id: '',
-    prenom2: '',
-    nom2: '',
-    email2: '',
-    rating2: '',
-    date_of_bird2: '',
+    prenom: '',
+    nom: '',
+    email: '',
+    rating: '',
+    date_of_bird: '',
   })
 
   useEffect(() => {
@@ -63,9 +65,10 @@ export default function Profile() {
     const { data } = await supabase
       .from("users")
       .select('*')
-    setUsers(data)
+    setUsers(data || [])
   }
 
+  // @ts-ignore
   function handleChange(event) {
     setUser(prevFormData => {
       return {
@@ -75,6 +78,7 @@ export default function Profile() {
     })
   }
 
+  // @ts-ignore
   function handleChange2(event) {
     setUser2(prevFormData => {
       return {
@@ -84,7 +88,7 @@ export default function Profile() {
     })
   }
 
-  function displayUser(userId) {
+  function displayUser(userId: string) {
 
     users.map((user) => {
 
@@ -104,7 +108,7 @@ export default function Profile() {
 
   }
 
-  async function updateUser(userId) {
+  async function updateUser(userId: string) {
     const { data, error } = await supabase
       .from("users")
       .update({
